@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+
+
+}
+.logo{
+     background: darkcyan;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.graficlogo{
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+nav{
+    margin:auto;
+    width: 800px;
+    height: 100px;
+}
+/*стили топнав*/
+.topnav{
+    background-color: aliceblue;
+    font-size: 14px;
+    margin-top: 40px;
+}
+/*Стиль подвала*/
+footer{
+    width: 100%;
+    height: auto;
+    background: darkcyan;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+footer a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+footer nav a:hover{
+    border-bottom: 2px solid blueviolet;
+}
+/*Стили ссылки топнав*/
+.topnav a{
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+.topnav a:hover{
+    border-bottom: 2px solid blueviolet;
+}
+/*Icon settings*/
+.topnav .icon{
+    display: none;
+}
+.center-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.advantages_container{
+    display:flex;
+    justify-content:center;
+
+}
+.advantages{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.advantages_item{
+    width: 30%;
+}
+
+a.nubex {
+    color: #fff;
+    user-select: none; /* Убираем текстовое выделение */
+    text-decoration: none;	/* Убираем подчеркивание */
+    outline: none; /* Убираем контур вокруг ссылки */
+    background-color: #fa8e47; /* Цвет фона */
+    padding: 1em 2em; /* Отступ от текста до рамки */
+}
+a.nubex:active {
+    background-color: #ee6206; /* Цвет кнопки при нажатии */
+}
+a.nubex:hover {
+    background-color: #f97f2e; /* Цвет кнопки при наведении курсора */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Медиа запрос адаптивность*/
+@media screen and (max-width: 768px){
+    /*все кроме первого элемента*/
+    .topnav a:not(:first-child){
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        margin-top: -20px;
+        display: block;
+        color: darkseagreen;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+    }
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .advantages_item{
+        width: 45%;
+    }
+
+
+}
